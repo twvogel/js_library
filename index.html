@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <div class = "title">Library</div>
+        <div class = "display">
+            <button id="addBook">Add Books</button>
+            <div class = "displayCard">
+                <div class = "totalBooksTitle">Total Books:&nbsp;</div>
+                <div class = "totalBooksNum">0</div>
+            </div>
+            <div class = "displayCard">
+                <div class = "totalBooksRead">Books Read:&nbsp;</div>
+                <div class = "totalBooksReadNum">0</div>
+            </div>
+            <div class = "displayCard">
+                <div class = "totalBooksToRead">Books To Read:&nbsp;</div>
+                <div class = "totalBooksToReadNum">0</div>
+            </div>
+        </div>
+    </header>
+    <dialog id="dialog">
+            <form>
+            <legend>Add New Book</legend>
+            <div class="formCard">
+                <label for = "bookTitle">Book Title</label>
+                <input type="text" id="bookTitle" name="bookTitle">
+            </div>
+            <div class="formCard">
+                <label for = "author">Author</label>
+                <input type="text" id="author" name="author">
+            </div>              
+            <div class="formCard">
+                <label for = "pages">Pages</label>
+                <input type="number" id="pages" name="pages">
+            </div>              
+            <div class="formCard">
+                <label for = "read">Read</label>    
+                <input type="radio" id="read" name="status">
+            </div>
+            <button class="cancel">Close</button>
+            <button type="submit" class="submit">Submit</button>
+            </form>     
+    </dialog>
+    <main>
+        <section class="area">
+            <!--<div class = "card">
+                <div class ="bookTitle"></div>
+                <div class ="author"></div>
+                <div class ="pages"></div>
+                <div class="status">
+                    <input type="radio" id="read" name="status" checked>
+                    <label for = "read">Read</label>
+                    <input type="radio" id="unread" name="status">
+                    <label for = "unread">Not Read</label>
+                </div> 
+            </div> -->
+
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex: 1;}
+
+header {display: flex;
+        justify-content: space-between;
+        background-color: rgb(209, 160, 255);
+        padding: 20px;
+
+}
+
+#addBook {font-size: 20px;
+          background-color: rgb(232, 220, 243);
+        border-radius: 10px;}
+
+.display {
+    display: flex;
+    gap: 35px;
+}
+
+.displayCard {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.title {
+    font-size: 70px;
+}
+
+
+main, section {
+    background-color: beige;
+    display: flex;
+    flex-grow: 1;    
+}
+
+.area {display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);      
+      gap: 10px;
+
+}
+
+.card {
+    border: solid;
+    border-color: black;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+legend {
+    font-size: 20px;
+    justify-content: center;
+
+}
