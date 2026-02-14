@@ -1,19 +1,22 @@
-body {margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        flex: 1;}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;}
 
-header {display: flex;
-        justify-content: space-between;
-        background-color: rgb(209, 160, 255);
-        padding: 20px;
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 160, 255);
+    padding: 20px;
 
 }
 
-#addBook {font-size: 20px;
-          background-color: rgb(232, 220, 243);
-        border-radius: 10px;}
+#addBook {
+    font-size: 20px;
+    background-color: rgb(232, 220, 243);
+    border-radius: 10px;}
 
 .display {
     display: flex;
@@ -37,16 +40,21 @@ main, section {
     flex-grow: 1;    
 }
 
-.area {display: grid;
-      grid-template-columns: repeat(auto-fit, 1fr);      
-      gap: 10px;
-
+.area {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, clamp(3fr, 3fr, 10fr));  
+    grid-template-columns: repeat(auto-fill, clamp(500px, 3fr, 10fr));      
+    gap: 10px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: solid;
     border-color: black;
     text-align: center;
+    
 }
 
 form {
@@ -60,4 +68,10 @@ legend {
     font-size: 20px;
     justify-content: center;
 
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
